@@ -1,15 +1,18 @@
 nav {
-    background-color: darkblue;
+    background-color: darkblue; /* Corrected */
     padding: 10px;
 }
+
 nav a {
     color: white;
     display: block;
     padding: 20px;
 }
+
 h1 {
     color: darkblue;
 }
+
 img {
     width: 150px;
     height: auto;
@@ -17,6 +20,29 @@ img {
     padding: 2px;
     box-shadow: 0 0 30px gray;    
 }
+
 p {
-    padding: 10px;
+    padding:  0; 
+}
+
+main {
+    max-width: 150px; 
+    margin: 0 auto;
+}
+
+aside {
+    width: 300px; 
+    float: right; 
+    margin-left: 10px; 
+}
+
+aside img {
+    max-width: 100%; 
+    height: auto; 
+} /* Added missing closing brace */
+
+footer {
+    background-color: #f8f8f8; 
+    padding: 10px; 
+    text-align: center; 
 }
