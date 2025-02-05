@@ -1,0 +1,64 @@
+/* Basic reset for margins and padding */
+body, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif; /* Sets the font */
+    background-color: #f4f4f4; /* Light gray background */
+}
+
+/* Main section styles */
+main {
+    max-width: 850px; /* Maximum width of the main content */
+    margin: 20px auto; /* Center the main content */
+    padding: 20px; /* Space inside the main content */
+    background: white; /* White background for the main content */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+/* Hero div styles */
+.herodiv {
+    position: relative; /* Allows absolute positioning of children */
+}
+
+/* Image styles */
+.herodiv img {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for the image */
+}
+
+/* Stats section styles */
+.stats {
+    position: absolute; /* Position it over the image */
+    top: 20px; /* Distance from the top */
+    left: 20px; /* Distance from the left */
+    background: rgba(255, 255, 255, 0.8); /* Light background with transparency */
+    padding: 15px; /* Space inside the stats box */
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Footer styles */
+footer {
+    position: fixed; /* Keep it at the bottom of the page */
+    bottom: 0; /* Distance from the bottom */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+    background: #333; /* Dark background */
+    color: white; /* White text color */
+    text-align: center; /* Center the text */
+    padding: 10px 0; /* Space inside the footer */
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .stats {
+        width: calc(100% - 40px); /* Make stats take full width minus padding */
+        left: 10px; /* Adjust position for smaller screens */
+        top: 10px; /* Adjust position for smaller screens */
+    }
+}

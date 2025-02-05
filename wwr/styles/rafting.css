@@ -1,0 +1,66 @@
+/* Basic styles */
+body {
+    font-family: 'Roboto', sans-serif; /* Using Google Font */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    background: #333; /* Dark background */
+    color: white; /* White text */
+    padding: 15px; /* Space around the header */
+    text-align: center; /* Center text */
+}
+
+nav a {
+    color: white; /* White links */
+    margin: 0 15px; /* Space between links */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Main section styles */
+.main {
+    max-width: 1200px; /* Limit width */
+    margin: 0 auto; /* Center main content */
+}
+
+/* Hero styles */
+.hero {
+    position: relative; /* Required for absolute positioning of children */
+}
+
+.hero-image {
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove space below image */
+}
+
+/* Article styles */
+article {
+    position: absolute; /* Position it absolutely within the hero */
+    top: 20px; /* Distance from the top */
+    left: 20px; /* Distance from the left */
+    background: rgba(255, 255, 255, 0.8); 
+    padding: 15px; /* Space inside */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.client-image {
+    float: right; /* Align image to the right */
+    width: 100px; /* Set width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Footer styles */
+footer {
+    background: #333; /* Dark background */
+    color: white; /* White text */
+    text-align: center; /* Center text */
+    padding: 10px 0; /* Space around footer */
+}
+
+footer a img {
+    width: 30px; /* Social media icon size */
+    margin: 0 10px; /* Space between icons */
+}
