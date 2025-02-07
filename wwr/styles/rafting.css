@@ -1,4 +1,4 @@
-/* Basic styles with a comment where necesary*/
+/* Basic styles with a comment where necessary */
 body {
     font-family: 'Roboto', sans-serif; /* Using Google Font */
     margin: 0;
@@ -10,17 +10,42 @@ header {
     background: #333; /* Dark background */
     color: white; /* White text */
     padding: 15px; /* Space around the header */
-    text-align: center; /* Center text */
+}
+
+.header-container {
+    display: grid; /* Use Grid for layout */
+    grid-template-columns: repeat(4, 1fr); /* Columns for logo, title, and nav */
+    grid-template-rows: repeat(4, 1fr);
+    align-items: horizontal; /* Center items horizontally */
+}
+
+.logo {
+    max-width: 100px; /* Limit logo size */
+}
+
+/* Navigation styles */
+nav {
+    display: flex; /* Use Flexbox for horizontal layout */
+}
+
+nav ul {
+    list-style-type: none; /* Remove default list styles */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    display: flex; /* Flexbox for list items */
+}
+
+nav li {
+    margin: 0 15px; /* Space between links */
 }
 
 nav a {
     color: white; /* White links */
-    margin: 0 15px; /* Space between links */
     text-decoration: none; /* Remove underline */
 }
 
 /* Main section styles */
-.main {
+main {
     max-width: 1200px; /* Limit width */
     margin: 0 auto; /* Center main content */
 }
@@ -46,9 +71,63 @@ article {
     border-radius: 8px; /* Rounded corners */
 }
 
+.history-content {
+    display: flex; /* Use Flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    text-align: center; /* Center text within paragraphs */
+    margin: 20px 0; /* Space above and below the section */
+}
+
+.history-content p {
+    flex: 1; /* Allow paragraphs to grow and take equal space */
+    margin: 0 10px; /* Space between paragraphs and image */
+}
+.history-title {
+    text-align: left; /* Center text */
+    text-align: right;
+    margin-bottom: 20px; /* Space below the heading */
+}
+
 .client-image {
-    float: right; /* Align image to the right */
-    width: 100px; /* Set width */
+    display: flex;
+    max-width: 150px; /* Set a maximum width for the image */
+    height: auto; /* Maintain aspect ratio */
+    flex-wrap: wrap;
+
+}
+
+/* Adventures section styles */
+.adventures {
+    display: flex; /* Use flexbox for the main section */
+    flex-direction: column; /* Stack title and images vertically */
+    align-items: horizontal; /* Center items horizontally */
+    margin-top: 20px; /* Space above the section */
+    grid-template-columns: repeat(5, 1fr);
+}   
+
+.adventure-title {
+    text-align: center; /* Center text */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.adventure-images {
+    display: flex; /* Use flexbox for the images */
+    justify-content: space-between; /* Even space between images */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    max-width: 1000px; /* Limit the width for alignment */
+    width: 100%; /* Take full width */
+}
+
+.adventure-images figure {
+    margin: 10px; /* Space around each figure */
+    text-align: center; /* Center captions */
+    flex: 1; /* Allow figures to grow equally */
+    min-width: 150px; /* Optional: minimum width to maintain clarity */
+}
+
+.adventure-images img {
+    max-width: 100%; /* Responsive images */
     height: auto; /* Maintain aspect ratio */
 }
 
@@ -58,6 +137,11 @@ footer {
     color: white; /* White text */
     text-align: center; /* Center text */
     padding: 10px 0; /* Space around footer */
+}
+
+footer .sociallinks {
+    display: flex; /* Use flexbox for social icons layout */
+    justify-content: center; /* Center social icons */
 }
 
 footer a img {
