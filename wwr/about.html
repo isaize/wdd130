@@ -6,56 +6,86 @@
     <title>About Us - Rafting Company</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="styles/rafting.css"> <!-- Link to my CSS file -->
+    <link rel="stylesheet" href="styles/rafting.css"> <!-- Link to CSS file -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- Google Font -->
+    <meta name="description" content="This page showcases my work and projects for the WDD 130 course.">
+    <meta name="author" content="Innocent Saize">
 </head>
-<!-- BODY ELEMENTS -->
 <body>
+    <!-- Header section -->
     <header>
-        <img src="images/wwrafting.jpeg" alt="Rafting Company Logo"> <!-- company logo -->
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="trips.html">Trips</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+        <div class="header-container"> <!-- Container for header elements -->
+            <img src="images/wwrafting.jpeg" alt="Rafting Company Logo" class="logo"> <!-- Company logo -->
+            <h1>RAFTING COMPANY</h1> <!-- Main heading -->
+            <nav> <!-- Navigation links -->
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="trips.html">Trips</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     
+    <!-- Main content -->
     <main>
-        <div class="hero">
+        <div class="hero"> <!-- Hero image section -->
             <img src="images/hero-image.jpg" alt="Rafting Adventure" class="hero-image"> <!-- Background image -->
-            <h1>RAFTING COMPANY</h1>
-            <article>
-                <h2>Client Experience</h2> <!-- Added heading -->
-                <img src="images/happy-client.jpg" alt="Happy Client" class="client-image">
-                <p>Your adventure starts here! Join us for an unforgettable rafting experience.</p>
+            <article> <!-- Article about client experience -->
+                <h2>Client Experience</h2> <!-- Subheading -->
+                <img src="images/happy-client.jpg" alt="Happy Client" class="client-image"> <!-- Client image -->
+                <p>Your adventure starts here! Join us for an unforgettable rafting experience.</p> <!-- Description -->
             </article>
-            <section>
-                <h2>History</h2>
-                <p>Our company was founded in a love for adventure.</p>
+            <section> <!-- History section -->
+                <section class="HISTORY"
+                <h2 class="HISTORY-title">HISTORY</h2> <!-- Subheading -->
+                <div class="history-content"> 
+                    <p>Our company was founded in a love for adventure.</p> 
+                    <img src="images/happy-client.jpg" alt="Enjoying Client" class="client-image"> <!-- Centered image -->
+                    <p>Our company was founded in a love for adventure.</p> 
+                </div>
             </section>
-            <section>
-                <h2>Adventure Awaits You!</h2>
-                <img src="images/rafting1.jpg" alt="Rafting Image 1">
-                <img src="images/rafting2.jpg" alt="Rafting Image 2">
-                <img src="images/rafting3.jpg" alt="Rafting Image 3">
-                <img src="images/rafting4.jpg" alt="Rafting Image 4">
-                <img src="images/rafting5.jpg" alt="Rafting Image 5">
+            <section class="adventures"> <!-- Adventures section -->
+                <h2 class="adventure-title">Adventure Awaits You!</h2> <!-- Subheading -->
+                <div class="adventure-images"> <!-- New wrapper for images -->
+                    <figure>
+                        <img src="images/rafting1.jpg" alt="Los Dientes del Diablo">
+                        <figcaption>Los Dientes del Diablo</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/rafting2.jpg" alt="Big Mallard">
+                        <figcaption>Big Mallard</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/rafting3.jpg" alt="Half Day Adventure">
+                        <figcaption>Half Day Adventure</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/rafting4.jpg" alt="River Explorer">
+                        <figcaption>River Explorer</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/rafting5.jpg" alt="Family Rafting">
+                        <figcaption>Family Rafting</figcaption>
+                    </figure>
+                </div>
             </section>
         </div>
     </main>
     
+    <!-- Footer section -->
     <footer>
-        <p>© 2025 Rafting Company. Innocent Saize.</p>
-        <nav class="sociallinks">
-            <a href="https://facebook.com"> 
-                <img src="images/facebook.jpg" alt="Facebook">
+        <p>© 2025 Rafting Company. Innocent Saize.</p> <!-- Copyright notice -->
+        <nav class="sociallinks"> <!-- Social media links -->
+            <a href="https://facebook.com">
+                <img src="images/facebook.jpg" alt="Facebook"> <!-- Facebook icon -->
             </a>
             <a href="https://twitter.com">
-                <img src="images/twitter.jpg" alt="Twitter">
+                <img src="images/twitter.jpg" alt="Twitter"> <!-- Twitter icon -->
             </a>
             <a href="https://instagram.com">
-                <img src="images/instagram.jpg" alt="Instagram">
+                <img src="images/instagram.jpg" alt="Instagram"> <!-- Instagram icon -->
             </a>
         </nav>
     </footer>
