@@ -25,25 +25,8 @@ header {
 
 /* Navigation styles */
 nav {
-    display: flex; /* Use Flexbox for horizontal layout */
+    justify-content: space-between;
 }
-
-nav ul {
-    list-style-type: none; /* Remove default list styles */
-    padding: 0; /* Remove padding */
-    margin: 0; /* Remove margin */
-    display: flex; /* Flexbox for list items */
-}
-
-nav li {
-    margin: 0 15px; /* Space between links */
-}
-
-nav a {
-    color: white; /* White links */
-    text-decoration: none; /* Remove underline */
-}
-
 /* Main section styles */
 main {
     max-width: 1200px; /* Limit width */
@@ -73,8 +56,8 @@ article {
 
 .history-content {
     display: flex; /* Use Flexbox for layout */
-    align-items: center; /* Center items vertically */
-    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center center */
+    justify-content: center; /* Center items center */
     text-align: center; /* Center text within paragraphs */
     margin: 20px 0; /* Space above and below the section */
 }
@@ -84,24 +67,23 @@ article {
     margin: 0 10px; /* Space between paragraphs and image */
 }
 .history-title {
-    text-align: left; /* Center text */
+    text-align: center; /* Center text */
     text-align: right;
     margin-bottom: 20px; /* Space below the heading */
 }
 
 .client-image {
-    display: flex;
-    max-width: 150px; /* Set a maximum width for the image */
-    height: auto; /* Maintain aspect ratio */
-    flex-wrap: wrap;
+        float: right;
+        max-width: 150px;
+        height: auto;
+    }
 
-}
 
 /* Adventures section styles */
 .adventures {
     display: flex; /* Use flexbox for the main section */
     flex-direction: column; /* Stack title and images vertically */
-    align-items: horizontal; /* Center items horizontally */
+    align-items: horizontal; /* Center items horizontal */
     margin-top: 20px; /* Space above the section */
     grid-template-columns: repeat(5, 1fr);
 }   
