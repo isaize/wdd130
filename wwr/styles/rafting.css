@@ -16,7 +16,7 @@ header {
     display: grid; /* Use Grid for layout */
     grid-template-columns: repeat(4, 1fr); /* Columns for logo, title, and nav */
     grid-template-rows: repeat(4, 1fr);
-    align-items: horizontal; /* Center items horizontally */
+    align-items: center; /* Center items horizontally */
 }
 
 .logo {
@@ -83,7 +83,7 @@ article {
 .adventures {
     display: flex; /* Use flexbox for the main section */
     flex-direction: column; /* Stack title and images vertically */
-    align-items: horizontal; /* Center items horizontal */
+    align-items: center; /* Center items horizontal */
     margin-top: 20px; /* Space above the section */
     grid-template-columns: repeat(5, 1fr);
 }   
