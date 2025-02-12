@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML and CSS Quiz</title>
+    <link rel="stylesheet" href="styles/quiz.css"> 
+<body>
+    <h1>HTML and CSS Quiz</h1>
+    <form action="#" method="post">
+        <div class="form-item">
+            <label for="q1">What does HTML stand for?</label>
+            <input type="text" id="q1" name="q1" required>
+        </div>
+
+        <div class="form-item">
+            <label for="q2">Describe the box model in CSS:</label>
+            <textarea id="q2" name="q2" rows="4" required></textarea>
+        </div>
+
+        <div class="form-item">
+            <label for="q3">What is the correct HTML element for inserting a line break?</label>
+            <select id="q3" name="q3" required>
+                <option value="" selected disabled>Choose One ...</option>
+                <option value="br">&lt;br&gt;</option>
+                <option value="hr">&lt;hr&gt;</option>
+                <option value="break">break</option>
+            </select>
+        </div>
+
+        <div class="form-item">
+            <label for="q4">How many pixels are in one inch (72 DPI)?</label>
+            <input type="number" id="q4" name="q4" required>
+        </div>
+
+        <button type="submit">Submit Quiz</button>
+    </form>
+</body>
+</html>
