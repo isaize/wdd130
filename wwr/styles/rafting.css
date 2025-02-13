@@ -8,15 +8,16 @@ body {
 /* Header styles */
 header {
     background: #0c0c0c; /* Dark background */
-    color: rgb(240, 241, 245); /* White text */
-    padding: 15px; /* Space around the header */
+    color: white; /* White text */
+    padding: 10px 0; /* Space around the header */
+
 }
 
 .header-container {
     display: grid; /* Use Grid for layout */
     grid-template-columns: repeat(4, 1fr); /* Columns for logo, title, and nav */
     grid-template-rows: repeat(4, 1fr);
-    align-items: center; /* Center items horizontally */
+    align-items: center; /* Center items centre */
 }
 
 .logo {
@@ -26,6 +27,10 @@ header {
 /* Navigation styles */
 nav {
     justify-content: space-between;
+    display: inline;
+    margin: 0 15px;
+    color: rgb(7, 7, 7);
+    text-decoration: none;
 }
 /* Main section styles */
 main {
@@ -34,7 +39,7 @@ main {
 }
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: yellow;
     margin: 0;
     padding: 20px;
 }
@@ -60,6 +65,39 @@ h1, h2 {
     max-width: 600px;
     border-radius: 5px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.trip-descriptions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.trip {
+    flex: 1 1 30%; /* Responsive flexbox layout */
+    margin: 10px;
+    text-align: center;
+}
+
+.trips-table {
+    margin: 20px 0;
+    width: 100%;
+}
+
+.trips-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.trips-table th, .trips-table td {
+    border: 1px solid #ebf3f03a;
+    padding: 8px;
+    text-align: left;
+}
+
+.trips-table th {
+    background-color: #becbd3d3;
 }
 
 .profiles {
@@ -126,6 +164,7 @@ button:hover {
 Hero styles
 .hero {
     position: relative; /* Required for absolute positioning of children */
+    text-align: center;
 }
 
 .hero-image {
@@ -133,7 +172,33 @@ Hero styles
     height: auto; /* Maintain aspect ratio */
     display: block; /* Remove space below image */
 }
+.hero-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
 
+.newsletter {
+    padding: 20px;
+    text-align: left;
+}
+
+.cta {
+    text-align: left;
+    margin: 20px 0;
+}
+
+.cta-button {
+    background-color: #06dada;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
 /* Article styles */
 article {
     position: absolute; /* Position it absolutely within the hero */
@@ -202,6 +267,17 @@ article {
     max-width: 100%; /* Responsive images */
     height: auto; /* Maintain aspect ratio */
 }
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-item {
+    text-align: center;
+}
+
 
 /* Footer styles */
 footer {
