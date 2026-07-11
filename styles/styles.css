@@ -20,7 +20,7 @@ main p {
     font-size: x-large;
     text-align: justify;
     border: 2px;
-    padding: 2px;
+    padding: 0px;
     margin: 10px 900px 10px 2px;
 }
 
@@ -30,6 +30,7 @@ main img {
     border: 1px solid black;
     box-shadow: 0 0 30px gray;
     border-radius: 20px;
+    padding: auto;
 }
 
 p {
