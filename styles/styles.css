@@ -21,16 +21,19 @@ main p {
     text-align: justify;
     border: 2px;
     padding: 0px;
-    margin: 10px 900px 10px 2px;
+    margin: 10px;
+
 }
 
 main img {
-    width: 150px;
+    width: 400px;
     height: auto;
     border: 1px solid black;
     box-shadow: 0 0 30px gray;
     border-radius: 20px;
-    padding: auto;
+    padding: 10px;
+    float: none;
+
 }
 
 p {
@@ -39,7 +42,7 @@ p {
 }
 
 main {
-    max-width: 840;
+    max-width: 840px;
 }
 
 aside {
