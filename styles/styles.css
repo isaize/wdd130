@@ -5,16 +5,17 @@
 }
 
 nav a {
-    color: gold;
+    color: white;
     display: block;
     padding: 20px;
     font-size: x-large;
-    background-color:black;
+    background-color: rgb(30, 30, 71);
 
 }
 
 h1 {
     color: darkblue;
+    margin-left: 10px;
 }
 
 main p {
@@ -22,7 +23,7 @@ main p {
     font-size: larger;
     text-align: justify;
     border: 2px;
-    padding: 0px;
+    padding: 10px;
     margin: 15px;
 
 }
@@ -37,18 +38,12 @@ main img {
 
 }
 
-p {
-    padding: 0;
-
-}
-
 main {
     max-width: 840px;
 }
 
 aside {
     width: 20rem;
-    font-size: larger;
     text-align: center;
 }
 
@@ -71,11 +66,18 @@ footer {
     font-size: x-large;
 }
 
+/* Class Selector */
+
 .box {
     margin: 1rem;
     padding: 1rem;
     border: 2px#333;
-    background-color: goldenrod;
+    background-color: rgb(230, 200, 127);
     color: #000;
+
+}
+
+.box a {
+    margin: 10px;
 
 }
